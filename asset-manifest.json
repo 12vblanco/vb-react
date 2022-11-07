@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/vb-react/static/css/main.0335fc03.css",
+    "main.js": "/vb-react/static/js/main.00aef8f8.js",
+    "static/media/maple-400.jpg": "/vb-react/static/media/maple-400.cb256d2d2d4d11bb6aea.jpg",
+    "static/media/ley1.jpg": "/vb-react/static/media/ley1.735288d614e03bd0c7f7.jpg",
+    "static/media/cherry__multi-2x.jpg": "/vb-react/static/media/cherry__multi-2x.bfdb1300212ab6d483e4.jpg",
+    "static/media/cherry_dec-2x.jpg": "/vb-react/static/media/cherry_dec-2x.e7b603c32fa2119a7711.jpg",
+    "static/media/ley__blue-2x.jpg": "/vb-react/static/media/ley__blue-2x.177c2561487ad6fbbbd8.jpg",
+    "static/media/ash__round-2x.jpg": "/vb-react/static/media/ash__round-2x.0a63a7d2c8218cb02971.jpg",
+    "static/media/cherry_cracked-2x.jpg": "/vb-react/static/media/cherry_cracked-2x.338af8a844b54b44e02d.jpg",
+    "static/media/acer__gold-2x.jpg": "/vb-react/static/media/acer__gold-2x.ad15e7d65b66f15c2245.jpg",
+    "static/media/ash__gold-2x.jpg": "/vb-react/static/media/ash__gold-2x.e41e00c61d680c7da384.jpg",
+    "static/media/sycamore__green-2x.jpg": "/vb-react/static/media/sycamore__green-2x.2474cb02333d3bca6c30.jpg",
+    "static/media/douglas__black-2x.jpg": "/vb-react/static/media/douglas__black-2x.511ccf5bd04b29674b2d.jpg",
+    "static/media/logoMain.png": "/vb-react/static/media/logoMain.e1424d4cd9aa32c1e5cc.png",
+    "index.html": "/vb-react/index.html",
+    "main.0335fc03.css.map": "/vb-react/static/css/main.0335fc03.css.map",
+    "main.00aef8f8.js.map": "/vb-react/static/js/main.00aef8f8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0335fc03.css",
+    "static/js/main.00aef8f8.js"
+  ]
+}
