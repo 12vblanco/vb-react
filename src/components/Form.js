@@ -4,7 +4,7 @@ import MainContainer from "./MainContainer";
 
 const Form = (props) => {
   const onSubmitHandler = (event) => {
-    event.preventDefault();
+    // event.preventDefault();
   };
   return (
     <MainContainer>
@@ -19,12 +19,12 @@ const Form = (props) => {
           <input type="hidden" name="BasketForm" value="BasketForm" />
 
           <Label htmlFor="name">
-            Your name
+            Your Name
             <Input id="name" type="text" name="name" />
           </Label>
 
           <Label htmlFor="email">
-            Your email
+            Your Email
             <span style={{ color: "#a52a2a", fontSize: "38px" }}>*</span>
             <Input id="email" type="email" name="email" required="required" />
           </Label>
