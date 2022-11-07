@@ -3,9 +3,6 @@ import styled from "styled-components";
 import MainContainer from "./MainContainer";
 
 const Form = (props) => {
-  const onSubmitHandler = (event) => {
-    // event.preventDefault();
-  };
   return (
     <MainContainer>
       <H1>Please send us any requests or queries using this form:</H1>
@@ -14,7 +11,7 @@ const Form = (props) => {
           name="BasketForm"
           method="POST"
           data-netlify="true"
-          onSubmit={onSubmitHandler}
+          onSubmit="submit"
         >
           <input type="hidden" name="BasketForm" value="BasketForm" />
 
