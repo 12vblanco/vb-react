@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0335fc03.css",
-    "main.js": "/static/js/main.c5f8e720.js",
+    "main.js": "/static/js/main.0549b399.js",
     "static/media/maple-400.jpg": "/static/media/maple-400.cb256d2d2d4d11bb6aea.jpg",
     "static/media/ley1.jpg": "/static/media/ley1.735288d614e03bd0c7f7.jpg",
     "static/media/cherry__multi-2x.jpg": "/static/media/cherry__multi-2x.bfdb1300212ab6d483e4.jpg",
@@ -16,10 +16,10 @@
     "static/media/logoMain.png": "/static/media/logoMain.e1424d4cd9aa32c1e5cc.png",
     "index.html": "/index.html",
     "main.0335fc03.css.map": "/static/css/main.0335fc03.css.map",
-    "main.c5f8e720.js.map": "/static/js/main.c5f8e720.js.map"
+    "main.0549b399.js.map": "/static/js/main.0549b399.js.map"
   },
   "entrypoints": [
     "static/css/main.0335fc03.css",
-    "static/js/main.c5f8e720.js"
+    "static/js/main.0549b399.js"
   ]
 }
