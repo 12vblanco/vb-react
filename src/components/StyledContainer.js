@@ -19,7 +19,7 @@ const Div = styled.div`
     padding-top: 1rem;
   } */
   @media (max-width: 900px) {
-    padding-top: 0;
+    padding-top: 100px;
   }
 `;
 

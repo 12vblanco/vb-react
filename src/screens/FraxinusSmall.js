@@ -119,6 +119,7 @@ const ColText = styled.div`
     height: auto;
     margin-top: 120px;
     margin-bottom: 30px;
+    padding: 1rem 0;
   }
   @media (max-width: 500px) {
     width: 340px;
@@ -174,6 +175,7 @@ const Description = styled.p`
   @media (max-width: 759px) {
     width: 56rem;
     margin-bottom: 2rem;
+    padding: 2rem 0 0 0;
   }
   @media (max-width: 500px) {
     width: 340px;

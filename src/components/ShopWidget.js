@@ -80,6 +80,9 @@ const ShopWidgetWrapper = styled.div`
   height: 9rem;
   border: 0.3px solid rgba(54, 54, 54, 0.2);
   margin-bottom: 2.6rem;
+  @media (max-width: 759px) {
+    margin-bottom: 0.6rem;
+  }
 `;
 
 const Basket = styled.div`
@@ -104,11 +107,17 @@ const BasketColumn = styled.div`
 const BasketIcon = styled(MdOutlineAddShoppingCart)`
   font-size: 5.2rem;
   margin: 0 1.6rem;
+  @media (max-width: 759px) {
+    font-size: 5.6rem;
+  }
 `;
 
 const H2 = styled.h2`
   font-size: 1.2rem;
   margin-bottom: -0.4rem;
+  @media (max-width: 759px) {
+    font-size: 1.4rem;
+  }
 `;
 
 const Counter = styled.div`
@@ -119,6 +128,9 @@ const Counter = styled.div`
   height: 100%;
   font-size: 4.6rem;
   font-weight: 500;
+  @media (max-width: 759px) {
+    font-size: 4.8rem;
+  }
 `;
 const PlusMinus = styled.div`
   display: flex;
@@ -146,13 +158,16 @@ const TotalText = styled.p`
   font-size: 2rem;
   font-weight: 700;
   margin: 0.6rem 0;
-  @media (max-width: 646px) {
-    font-size: 12px;
+  @media (max-width: 759px) {
+    font-size: 14px;
   }
 `;
 const TotalAmount = styled.p`
   font-size: 2.6rem;
   font-weight: 500;
+  @media (max-width: 759px) {
+    font-size: 3rem;
+  }
 `;
 
 const Checkout = styled.div`
@@ -189,9 +204,9 @@ const CheckoutDiv = styled.div`
 const CheckoutIcon = styled(IoBagCheckOutline)`
   font-size: 3.4rem;
   margin-top: 1.4rem;
-  /* @media (max-width: 1400px) {
-    font-size: 3rem;
-  } */
+  @media (max-width: 759px) {
+    font-size: 5.6rem;
+  }
 `;
 
 export default ShopWidget;
