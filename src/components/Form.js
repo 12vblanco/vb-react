@@ -7,56 +7,60 @@ const Form = (props) => {
     <MainContainer>
       <H1>Please send us any requests or queries using this form:</H1>
       <FromContainer>
-        <StyledForm
-          name="BasketForm"
-          method="POST"
-          data-netlify="true"
-          onSubmit="submit"
-        >
+        <StyledForm name="BasketForm" method="POST">
           <input type="hidden" name="BasketForm" value="BasketForm" />
-
-          <Label htmlFor="name">
-            Your Name
-            <Input id="name" type="text" name="name" />
-          </Label>
-
-          <Label htmlFor="email">
-            Your Email
-            <span style={{ color: "#a52a2a", fontSize: "38px" }}>*</span>
-            <Input id="email" type="email" name="email" required="required" />
-          </Label>
-
-          <Label htmlFor="textarea">
-            Message<span style={{ color: "#a52a2a", fontSize: "38px" }}>*</span>
-            <TextArea
-              id="textarea"
-              type="textarea"
-              name="textarea"
-              style={{
-                height: "140px",
-                fontSize: "2.4rem",
-              }}
-            />
-          </Label>
-
-          <Label htmlFor="checkbox">
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <Checkbox type="checkbox" required="required" />
-              <CheckText>
-                I am happy to receive emails regarding this message
-                <span style={{ color: "#a52a2a", fontSize: "3.2rem" }}>*</span>
-                {/* </a> */}
-              </CheckText>
-            </div>
-          </Label>
-
-          <InputButton type="submit" value="Send a message" />
+          <p>
+            <Label htmlFor="name">
+              Your Name
+              <Input id="name" type="text" name="name" />
+            </Label>
+          </p>
+          <p>
+            <Label htmlFor="email">
+              Your Email
+              <span style={{ color: "#a52a2a", fontSize: "38px" }}>*</span>
+              <Input id="email" type="email" name="email" required="required" />
+            </Label>
+          </p>
+          <p>
+            {" "}
+            <Label htmlFor="textarea">
+              Message
+              <span style={{ color: "#a52a2a", fontSize: "38px" }}>*</span>
+              <TextArea
+                id="textarea"
+                type="textarea"
+                name="textarea"
+                style={{
+                  height: "140px",
+                  fontSize: "2.4rem",
+                }}
+              />
+            </Label>
+          </p>
+          <p>
+            {" "}
+            <Label htmlFor="checkbox">
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <Checkbox type="checkbox" required="required" />
+                <CheckText>
+                  I am happy to receive emails regarding this message
+                  <span style={{ color: "#a52a2a", fontSize: "3.2rem" }}>
+                    *
+                  </span>
+                </CheckText>
+              </div>
+            </Label>
+          </p>
+          <p>
+            <InputButton type="submit" value="Send a message" />
+          </p>
         </StyledForm>
       </FromContainer>
     </MainContainer>
