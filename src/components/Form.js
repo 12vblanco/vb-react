@@ -90,7 +90,6 @@ const Form = (props) => {
             </label>
           </p>
           <p>
-            {" "}
             <label htmlFor="textarea">
               Message
               <span>*</span>
@@ -100,16 +99,18 @@ const Form = (props) => {
           <p>
             <label htmlFor="checkbox">
               <div>
-                <Checkbox type="checkbox" required="required" />
-                <CheckText>
+                <checkbox type="checkbox" required="required" />
+                <p>
                   I am happy to receive emails regarding this message
                   <span> * </span>
-                </CheckText>
+                </p>
               </div>
             </label>
           </p>
           <p>
-            <InputButton type="submit" value="Send a message" />
+            <button type="submit" value="Send a message">
+              Send
+            </button>
           </p>
         </form>
       </FromContainer>
