@@ -7,7 +7,7 @@ const Form = (props) => {
     <MainContainer>
       <H1>Please send us any requests or queries using this form:</H1>
       <FromContainer>
-        <form
+        {/* <form
           name="BasketForm"
           method="POST"
           data-netlify="true"
@@ -63,6 +63,50 @@ const Form = (props) => {
                 </CheckText>
               </div>
             </Label>
+          </p>
+          <p>
+            <InputButton type="submit" value="Send a message" />
+          </p>
+        </form> */}
+        <form
+          name="BasketForm"
+          method="POST"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          data-netlify-recaptcha="true"
+          hidden
+        >
+          <p>
+            <label htmlFor="name">
+              Your Name
+              <input id="name" type="text" name="name" />
+            </label>
+          </p>
+          <p>
+            <label htmlFor="email">
+              Your Email
+              <span>*</span>
+              <input id="email" type="email" name="email" required="required" />
+            </label>
+          </p>
+          <p>
+            {" "}
+            <label htmlFor="textarea">
+              Message
+              <span>*</span>
+              <textarea></textarea>
+            </label>
+          </p>
+          <p>
+            <label htmlFor="checkbox">
+              <div>
+                <Checkbox type="checkbox" required="required" />
+                <CheckText>
+                  I am happy to receive emails regarding this message
+                  <span> * </span>
+                </CheckText>
+              </div>
+            </label>
           </p>
           <p>
             <InputButton type="submit" value="Send a message" />
