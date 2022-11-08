@@ -10,6 +10,9 @@ const Form = (props) => {
         <form
           name="BasketForm"
           method="POST"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          data-netlify-recaptcha="false"
           style={{ display: "flex", flexDirection: "column", width: "50rem" }}
         >
           <input type="hidden" name="BasketForm" value="BasketForm" />
