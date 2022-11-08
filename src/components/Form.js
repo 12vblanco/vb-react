@@ -7,7 +7,7 @@ const Form = (props) => {
     <MainContainer>
       <H1>Please send us any requests or queries using this form:</H1>
       <FromContainer>
-        {/* <form
+        <form
           name="BasketForm"
           method="POST"
           data-netlify="true"
@@ -67,50 +67,6 @@ const Form = (props) => {
           <p>
             <InputButton type="submit" value="Send a message" />
           </p>
-        </form> */}
-        <form
-          name="BasketForm"
-          method="POST"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-          data-netlify-recaptcha="true"
-        >
-          <p>
-            <label htmlFor="name">
-              Your Name
-              <input id="name" type="text" name="name" />
-            </label>
-          </p>
-          <p>
-            <label htmlFor="email">
-              Your Email
-              <span>*</span>
-              <input id="email" type="email" name="email" required="required" />
-            </label>
-          </p>
-          <p>
-            <label htmlFor="textarea">
-              Message
-              <span>*</span>
-              <textarea></textarea>
-            </label>
-          </p>
-          <p>
-            <label htmlFor="checkbox">
-              <div>
-                <checkbox type="checkbox" required="required" />
-                <p>
-                  I am happy to receive emails regarding this message
-                  <span> * </span>
-                </p>
-              </div>
-            </label>
-          </p>
-          <p>
-            <button type="submit" value="Send a message">
-              Send
-            </button>
-          </p>
         </form>
       </FromContainer>
     </MainContainer>
@@ -139,67 +95,67 @@ const H1 = styled.h1`
   background: rgba(213, 221, 224, 0.4);
 `;
 
-// const Input = styled.input`
-//   width: 50rem;
-//   padding: 7px;
-//   height: 32px;
-//   border-radius: 0.6rem;
-//   outline: 0.2rem solid black;
-//   position: relative;
-//   left: 50%;
-//   transform: translate(-50%);
-//   font-size: 1.6rem;
-// `;
-// const TextArea = styled.textarea`
-//   font-family: "Poppins, sans-serif";
-//   width: 50rem;
-//   padding: 7px;
-//   border-radius: 0.6rem;
-//   outline: 0.2rem solid black;
-//   position: relative;
-//   left: 50%;
-//   transform: translate(-50%);
-//   font-size: 1.6rem;
-// `;
+const Input = styled.input`
+  width: 50rem;
+  padding: 7px;
+  height: 32px;
+  border-radius: 0.6rem;
+  outline: 0.2rem solid black;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 1.6rem;
+`;
+const TextArea = styled.textarea`
+  font-family: "Poppins, sans-serif";
+  width: 50rem;
+  padding: 7px;
+  border-radius: 0.6rem;
+  outline: 0.2rem solid black;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 1.6rem;
+`;
 
-// const Label = styled.label`
-//   font-size: 2rem;
-//   width: 50rem;
-// `;
+const Label = styled.label`
+  font-size: 2rem;
+  width: 50rem;
+`;
 
-// const Checkbox = styled.input`
-//   height: 22px;
-//   width: 22px;
-//   outline: 0.2rem solid black;
-//   accent-color: #333;
-//   &:checked {
-//     background-color: #fff;
-//     color: #333;
-//   }
-// `;
+const Checkbox = styled.input`
+  height: 22px;
+  width: 22px;
+  outline: 0.2rem solid black;
+  accent-color: #333;
+  &:checked {
+    background-color: #fff;
+    color: #333;
+  }
+`;
 
-// const CheckText = styled.p`
-//   text-align: left;
-//   font-size: 1.4rem;
-//   line-height: 1;
-//   width: 44rem;
-//   padding-left: 2rem;
-//   margin-top: -5px;
-// `;
+const CheckText = styled.p`
+  text-align: left;
+  font-size: 1.4rem;
+  line-height: 1;
+  width: 44rem;
+  padding-left: 2rem;
+  margin-top: -5px;
+`;
 
-// const InputButton = styled.input`
-//   border-radius: 0.75rem;
-//   outline: 0.2rem solid black;
-//   font-weight: 700;
-//   margin-top: 20px;
-//   font-size: 1.75rem;
-//   padding: 1.7rem 2rem;
-//   width: 20rem;
-//   position: relative;
-//   left: 50%;
-//   transform: translate(-50%);
-//   background: #fff;
-//   cursor: pointer;
-// `;
+const InputButton = styled.input`
+  border-radius: 0.75rem;
+  outline: 0.2rem solid black;
+  font-weight: 700;
+  margin-top: 20px;
+  font-size: 1.75rem;
+  padding: 1.7rem 2rem;
+  width: 20rem;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  background: #fff;
+  cursor: pointer;
+`;
 
 export default Form;
