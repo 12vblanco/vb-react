@@ -15,7 +15,6 @@ const Form = (props) => {
           data-netlify-recaptcha="true"
           style={{ display: "flex", flexDirection: "column", width: "50rem" }}
         >
-          <input type="hidden" name="BasketForm" value="BasketForm" />
           <p>
             <Label htmlFor="name">
               Your Name

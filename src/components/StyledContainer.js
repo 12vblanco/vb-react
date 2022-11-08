@@ -10,14 +10,6 @@ const Div = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  /* max-width: 120rem; */
-  /* padding-bottom: 3rem;
-  padding-top: 4rem;
-  margin-bottom: 2rem; */
-
-  /* /* @media (max-width: 114rem) {
-    padding-top: 1rem;
-  } */
   @media (max-width: 900px) {
     padding-top: 100px;
   }
