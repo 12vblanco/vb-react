@@ -7,7 +7,11 @@ const Form = (props) => {
     <MainContainer>
       <H1>Please send us any requests or queries using this form:</H1>
       <FromContainer>
-        <StyledForm name="BasketForm" method="POST">
+        <form
+          name="BasketForm"
+          method="POST"
+          style={{ display: "flex", flexDirection: "column", width: "50rem" }}
+        >
           <input type="hidden" name="BasketForm" value="BasketForm" />
           <p>
             <Label htmlFor="name">
@@ -61,7 +65,7 @@ const Form = (props) => {
           <p>
             <InputButton type="submit" value="Send a message" />
           </p>
-        </StyledForm>
+        </form>
       </FromContainer>
     </MainContainer>
   );
@@ -87,13 +91,6 @@ const H1 = styled.h1`
   padding: 0.6rem 0.75rem 1rem 0.75rem;
   border-radius: 0.8rem;
   background: rgba(213, 221, 224, 0.4);
-`;
-
-const StyledForm = styled.form`
-  display: flex;
-  flex-direction: column;
-  width: 50rem;
-  /* margin-top: rem; */
 `;
 
 const Input = styled.input`
