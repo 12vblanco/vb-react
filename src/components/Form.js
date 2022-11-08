@@ -74,7 +74,6 @@ const Form = (props) => {
           data-netlify="true"
           data-netlify-honeypot="bot-field"
           data-netlify-recaptcha="true"
-          hidden
         >
           <p>
             <label htmlFor="name">
