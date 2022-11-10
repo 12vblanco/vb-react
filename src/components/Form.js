@@ -7,31 +7,30 @@ const Form = (props) => {
     <MainContainer>
       <H1>Please send us any requests or queries using this form:</H1>
       <FromContainer>
-        {/* <form name="contact" method="post">
+        <form name="contact" method="post">
           <input type="hidden" name="form-name" value="contact" />
           <p>
             <label>
-              Your Name: <input type="text" name="name" />
+              <p>Your Name:</p> <Input type="text" name="name" />
             </label>
           </p>
           <p>
             <label>
-              Your Email: <input type="email" name="email" />
+              <p>Your Email:</p> <Input type="email" name="email" />
             </label>
           </p>
           <p>
             <label>
-              Message: <textarea name="message"></textarea>
+              <p>Message:</p> <textarea name="message"></textarea>
             </label>
           </p>
           <p>
             <button type="submit">Send</button>
           </p>
-        </form> */}
-        <form
-          name="contact"
-          method="post"
-          // data-netlify="true"
+        </form>
+        {/*         <form name="contact" method="post"
+
+          data-netlify="true"
           data-netlify-honeypot="bot-field"
           data-netlify-recaptcha="true"
           style={{ display: "flex", flexDirection: "column", width: "50rem" }}
@@ -88,7 +87,7 @@ const Form = (props) => {
           <p>
             <InputButton type="submit" value="Send a message" />
           </p>
-        </form>
+        </form> */}
       </FromContainer>
     </MainContainer>
   );
@@ -127,56 +126,56 @@ const Input = styled.input`
   transform: translate(-50%);
   font-size: 1.6rem;
 `;
-const TextArea = styled.textarea`
-  font-family: "Poppins, sans-serif";
-  width: 50rem;
-  padding: 7px;
-  border-radius: 0.6rem;
-  outline: 0.2rem solid black;
-  position: relative;
-  left: 50%;
-  transform: translate(-50%);
-  font-size: 1.6rem;
-`;
+// const TextArea = styled.textarea`
+//   font-family: "Poppins, sans-serif";
+//   width: 50rem;
+//   padding: 7px;
+//   border-radius: 0.6rem;
+//   outline: 0.2rem solid black;
+//   position: relative;
+//   left: 50%;
+//   transform: translate(-50%);
+//   font-size: 1.6rem;
+// `;
 
-const Label = styled.label`
-  font-size: 2rem;
-  width: 50rem;
-`;
+// const Label = styled.label`
+//   font-size: 2rem;
+//   width: 50rem;
+// `;
 
-const Checkbox = styled.input`
-  height: 22px;
-  width: 22px;
-  outline: 0.2rem solid black;
-  accent-color: #333;
-  &:checked {
-    background-color: #fff;
-    color: #333;
-  }
-`;
+// const Checkbox = styled.input`
+//   height: 22px;
+//   width: 22px;
+//   outline: 0.2rem solid black;
+//   accent-color: #333;
+//   &:checked {
+//     background-color: #fff;
+//     color: #333;
+//   }
+// `;
 
-const CheckText = styled.p`
-  text-align: left;
-  font-size: 1.4rem;
-  line-height: 1;
-  width: 44rem;
-  padding-left: 2rem;
-  margin-top: -5px;
-`;
+// const CheckText = styled.p`
+//   text-align: left;
+//   font-size: 1.4rem;
+//   line-height: 1;
+//   width: 44rem;
+//   padding-left: 2rem;
+//   margin-top: -5px;
+// `;
 
-const InputButton = styled.input`
-  border-radius: 0.75rem;
-  outline: 0.2rem solid black;
-  font-weight: 700;
-  margin-top: 20px;
-  font-size: 1.75rem;
-  padding: 1.7rem 2rem;
-  width: 20rem;
-  position: relative;
-  left: 50%;
-  transform: translate(-50%);
-  background: #fff;
-  cursor: pointer;
-`;
+// const InputButton = styled.input`
+//   border-radius: 0.75rem;
+//   outline: 0.2rem solid black;
+//   font-weight: 700;
+//   margin-top: 20px;
+//   font-size: 1.75rem;
+//   padding: 1.7rem 2rem;
+//   width: 20rem;
+//   position: relative;
+//   left: 50%;
+//   transform: translate(-50%);
+//   background: #fff;
+//   cursor: pointer;
+// `;
 
 export default Form;
