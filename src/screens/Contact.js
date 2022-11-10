@@ -17,8 +17,8 @@ const Contact = () => {
 
 const Div = styled.div`
   width: 100%;
-  height: 90vh;
-  margin-top: 110px;
+  height: auto;
+  /* margin-top: 110px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
