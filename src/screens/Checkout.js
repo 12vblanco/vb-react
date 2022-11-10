@@ -5,7 +5,9 @@ import MainContainer from "./MainContainer";
 const Checkout = (props) => {
   return (
     <MainContainer>
-      <h1>Checkout</h1>
+      <form action="/create-checkout-session" method="POST">
+        <button type="submit">Checkout</button>
+      </form>
     </MainContainer>
   );
 };

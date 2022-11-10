@@ -8,24 +8,24 @@ import CartProduct from "./CartProduct";
 const Modal = ({ handleClose }) => {
   const cart = useContext(CartContext);
 
-  const checkout = async () => {
-    alert("you are being redirected to stripe");
-    await fetch("http://localhost:4000/checkout", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ items: cart.items }),
-    })
-      .then((response) => {
-        return response.json();
-      })
-      .then((response) => {
-        if (response.url) {
-          window.location.assign(response.url); // Forwarding user to Stripe
-        }
-      });
-  };
+  // const checkout = async () => {
+  //   alert("you are being redirected to stripe");
+  //   await fetch("http://localhost:4000/checkout", {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     body: JSON.stringify({ items: cart.items }),
+  //   })
+  //     .then((response) => {
+  //       return response.json();
+  //     })
+  //     .then((response) => {
+  //       if (response.url) {
+  //         window.location.assign(response.url); // Forwarding user to Stripe
+  //       }
+  //     });
+  // };
 
   const productsCount = cart.items.reduce(
     (sum, product) => sum + product.quantity,
@@ -69,7 +69,11 @@ const Modal = ({ handleClose }) => {
                   £{cart.getTotalCost().toFixed(2)}
                 </span>
               </p>
-              <ChkButton onClick={checkout}>Checkout</ChkButton>
+              <ChkButton
+              // onClick={checkout}
+              >
+                Checkout
+              </ChkButton>
             </RowDiv>
           </>
         ) : (

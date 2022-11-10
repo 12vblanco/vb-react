@@ -11,7 +11,6 @@ const ShopWidget = ({ id, price }) => {
 
   return (
     <ShopWidgetWrapper>
-      {" "}
       <Basket>
         {productQty > 0 ? (
           <>
