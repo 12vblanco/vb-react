@@ -21,11 +21,26 @@ const Form = (props) => {
           </p>
           <p>
             <label>
-              <p>Message:</p> <textarea name="message"></textarea>
+              <p>Message:</p> <TextArea name="message"></TextArea>
             </label>
           </p>
           <p>
-            <button type="submit">Send</button>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <Checkbox type="checkbox" required="required" />
+              <CheckText>
+                I am happy to receive emails regarding this message
+                <span style={{ color: "#a52a2a", fontSize: "3.2rem" }}>*</span>
+              </CheckText>
+            </div>
+          </p>
+          <p>
+            <InputButton type="submit">Send</InputButton>
           </p>
         </form>
         {/*         <form name="contact" method="post"
@@ -126,56 +141,52 @@ const Input = styled.input`
   transform: translate(-50%);
   font-size: 1.6rem;
 `;
-// const TextArea = styled.textarea`
-//   font-family: "Poppins, sans-serif";
-//   width: 50rem;
-//   padding: 7px;
-//   border-radius: 0.6rem;
-//   outline: 0.2rem solid black;
-//   position: relative;
-//   left: 50%;
-//   transform: translate(-50%);
-//   font-size: 1.6rem;
-// `;
+const TextArea = styled.textarea`
+  font-family: "Poppins, sans-serif";
+  width: 50rem;
+  height: 140px;
+  padding: 7px;
+  border-radius: 0.6rem;
+  outline: 0.2rem solid black;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 1.6rem;
+`;
 
-// const Label = styled.label`
-//   font-size: 2rem;
-//   width: 50rem;
-// `;
+const Checkbox = styled.input`
+  height: 22px;
+  width: 22px;
+  outline: 0.2rem solid black;
+  accent-color: #333;
+  &:checked {
+    background-color: #fff;
+    color: #333;
+  }
+`;
 
-// const Checkbox = styled.input`
-//   height: 22px;
-//   width: 22px;
-//   outline: 0.2rem solid black;
-//   accent-color: #333;
-//   &:checked {
-//     background-color: #fff;
-//     color: #333;
-//   }
-// `;
+const CheckText = styled.p`
+  text-align: left;
+  font-size: 1.4rem;
+  line-height: 1;
+  width: 44rem;
+  padding-left: 2rem;
+  margin-top: -5px;
+`;
 
-// const CheckText = styled.p`
-//   text-align: left;
-//   font-size: 1.4rem;
-//   line-height: 1;
-//   width: 44rem;
-//   padding-left: 2rem;
-//   margin-top: -5px;
-// `;
-
-// const InputButton = styled.input`
-//   border-radius: 0.75rem;
-//   outline: 0.2rem solid black;
-//   font-weight: 700;
-//   margin-top: 20px;
-//   font-size: 1.75rem;
-//   padding: 1.7rem 2rem;
-//   width: 20rem;
-//   position: relative;
-//   left: 50%;
-//   transform: translate(-50%);
-//   background: #fff;
-//   cursor: pointer;
-// `;
+const InputButton = styled.button`
+  border-radius: 0.75rem;
+  outline: 0.2rem solid black;
+  font-weight: 700;
+  margin-top: 20px;
+  font-size: 1.75rem;
+  padding: 1.7rem 2rem;
+  width: 20rem;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  background: #fff;
+  cursor: pointer;
+`;
 
 export default Form;
