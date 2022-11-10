@@ -7,7 +7,12 @@ const Form = (props) => {
     <MainContainer>
       <H1>Please send us any requests or queries using this form:</H1>
       <FromContainer>
-        <form name="contact" method="post">
+        <form
+          name="contact"
+          method="post"
+          data-netlify-honeypot="bot-field"
+          data-netlify-recaptcha="true"
+        >
           <input type="hidden" name="form-name" value="contact" />
           <p>
             <label>
@@ -43,66 +48,6 @@ const Form = (props) => {
             <InputButton type="submit">Send</InputButton>
           </p>
         </form>
-        {/*         <form name="contact" method="post"
-
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-          data-netlify-recaptcha="true"
-          style={{ display: "flex", flexDirection: "column", width: "50rem" }}
-        >
-          <p>
-            <Label htmlFor="name">
-              Your Name
-              <Input id="name" type="text" name="name" />
-            </Label>
-          </p>
-          <p>
-            <Label htmlFor="email">
-              Your Email
-              <span style={{ color: "#a52a2a", fontSize: "38px" }}>*</span>
-              <Input id="email" type="email" name="email" required="required" />
-            </Label>
-          </p>
-          <p>
-            {" "}
-            <Label htmlFor="textarea">
-              Message
-              <span style={{ color: "#a52a2a", fontSize: "38px" }}>*</span>
-              <TextArea
-                id="textarea"
-                type="textarea"
-                name="textarea"
-                style={{
-                  height: "140px",
-                  fontSize: "2.4rem",
-                }}
-              />
-            </Label>
-          </p>
-          <p>
-            {" "}
-            <Label htmlFor="checkbox">
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
-              >
-                <Checkbox type="checkbox" required="required" />
-                <CheckText>
-                  I am happy to receive emails regarding this message
-                  <span style={{ color: "#a52a2a", fontSize: "3.2rem" }}>
-                    *
-                  </span>
-                </CheckText>
-              </div>
-            </Label>
-          </p>
-          <p>
-            <InputButton type="submit" value="Send a message" />
-          </p>
-        </form> */}
       </FromContainer>
     </MainContainer>
   );
@@ -113,7 +58,7 @@ const FromContainer = styled.div`
   flex-direction: column;
   align-items: center;
   width: 62.5rem;
-  padding: 0.6rem 0.75rem 2rem 0.75rem;
+  padding: 2rem 0.75rem 2rem 0.75rem;
   border-radius: 0.8rem;
   background: rgba(213, 221, 224, 0.4);
 `;
