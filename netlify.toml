@@ -5,10 +5,8 @@
   publish = "."
 
 [[redirects]]
-  from = '/api/react'
+  from = '/api/*'
   to = '/.netlify/functions/:splat'
   status = 200
 
-  from= "/contact"
-  to = "/index.html"
-  status= 200
+  
