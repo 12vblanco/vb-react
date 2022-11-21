@@ -1,8 +1,5 @@
 
-[build]
-  command = "react-scripts build"
-  functions = "netlify/functions"
-  publish = "."
+
 
 [[redirects]]
   from = '/api/*'
