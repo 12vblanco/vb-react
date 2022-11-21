@@ -1,5 +1,6 @@
 
 [build]
+  command = "react-scripts build"
   functions = "netlify/functions"
   publish = "."
 
