@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { IoMdClose } from "react-icons/io";
 import { CartContext } from "../aux/CartContext";
-
+import Checkout from "../screens/Checkout";
 import styled from "styled-components";
 import CartProduct from "./CartProduct";
 
@@ -72,7 +72,7 @@ const Modal = ({ handleClose }) => {
               <ChkButton
               // onClick={checkout}
               >
-                Checkout
+                <Checkout />
               </ChkButton>
             </RowDiv>
           </>

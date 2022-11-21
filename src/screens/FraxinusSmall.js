@@ -114,6 +114,13 @@ const ColText = styled.div`
     min-height: 635px;
     width: 59rem;
   }
+  @media (max-width: 1040px) {
+    width: 46rem;
+    min-height: 635px;
+    margin-top: 120px;
+    margin-bottom: 30px;
+    padding: 1rem 0;
+  }
   @media (max-width: 753px) {
     width: auto;
     height: auto;

@@ -36,7 +36,7 @@ function App({ handleShow }) {
           <Route path="/prunusTwin" element={<PrunusTwin />} />
           <Route path="/roundAsh" element={<RoundAsh />} />
           <Route path="/prunusAvium" element={<PrunusAvium />} />
-          <Route path="/success" element={<success />} />
+          <Route path="/success" element={<Success />} />
         </Routes>
       </ThemeProvider>
     </CartProvider>

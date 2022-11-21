@@ -2,12 +2,12 @@
 
 [build]
   command = "# no build command"
-  functions = "netlify/functions"
+  functions = "netlify/function"
   publish = "."
 
 [[redirects]]
   from = '/api/*'
-  to = '/.netlify/functions/:splat'
+  to = '/.netlify/function/:splat'
   status = 200
 
   from= "/contact"
