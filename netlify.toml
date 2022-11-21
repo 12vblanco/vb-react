@@ -1,6 +1,5 @@
 
 [build]
-  command = "build/static"
   functions = "netlify/functions"
   publish = "."
 
