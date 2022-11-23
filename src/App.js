@@ -15,6 +15,7 @@ import PrunusAvium from "./screens/PrunusAvium";
 import PrunusSerrulata from "./screens/PrunusSerrulata";
 import PrunusTwin from "./screens/PrunusTwin";
 import RoundAsh from "./screens/RoundAsh";
+import Success from "./screens/Success";
 import Sycamore from "./screens/Sycamore";
 
 function App({ handleShow }) {
