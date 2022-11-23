@@ -9,7 +9,7 @@ const Footer = () => {
       <FooterDiv>
         <Div>
           <NavLink to="/contact">
-            Victor Blanco 2019 -{new Date().getFullYear()} &copy;
+            Victor Blanco 2019 - {new Date().getFullYear()} &copy;
             <span>&nbsp;&nbsp;</span>
           </NavLink>{" "}
           <NavLink to="/terms"> Terms & conditions</NavLink> <span>&nbsp;</span>
