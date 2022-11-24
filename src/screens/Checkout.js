@@ -10,9 +10,8 @@ const callApi = () => {
   fetch("/api/stripe", {
     method: "POST",
   })
-    .then(function (response) {
-      return response.json();
-    })
+    .then((response) => response.json())
+
     .then(function (session) {
       return stripe.redirectToCheckout({ sessionId: session.id });
     })
