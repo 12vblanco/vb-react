@@ -6,37 +6,36 @@ const stripe = Stripe(
   "pk_live_51HqgwdGKpDMhyEuLX8UlCGgIwar8J0f6kVS0keUbm5AJ3wARS3pjDX6DIewIBgVYFg8jlyNMtdwZR6sNwnTqfQ3000gB83o2z5"
 );
 
+const callApi = () => {
+  {
+    fetch("/api/stripe", {
+      method: "POST",
+    })
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (session) {
+        return stripe.redirectToCheckout({ sessionId: session.id });
+      })
+      .then(function (result) {
+        if (result.error) {
+          alert(result.error.message);
+        }
+      })
+      .catch(function (error) {
+        console.error("Error:", error);
+      });
+  }
+};
+
 const Checkout = () => {
   return (
     <div>
       <form
-      // action="https://vb-react.netlify.app/create-checkout-session"
-      // method="POST"
+        action="https://vb-react.netlify.app/create-checkout-session"
+        method="POST"
       >
-        <ChkButton
-          type="submit"
-          onClick={() => {
-            {
-              fetch("/api/stripe", {
-                method: "POST",
-              })
-                .then(function (response) {
-                  return response.json();
-                })
-                .then(function (session) {
-                  return stripe.redirectToCheckout({ sessionId: session.id });
-                })
-                .then(function (result) {
-                  if (result.error) {
-                    alert(result.error.message);
-                  }
-                })
-                .catch(function (error) {
-                  console.error("Error:", error);
-                });
-            }
-          }}
-        >
+        <ChkButton type="submit" onClick={callApi}>
           Checkout
         </ChkButton>
       </form>
