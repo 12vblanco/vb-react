@@ -17,7 +17,7 @@ const Checkout = () => {
           type="submit"
           onClick={() => {
             {
-              fetch("https://api.stripe.com", {
+              fetch("/api/stripe", {
                 method: "POST",
               })
                 .then(function (response) {
