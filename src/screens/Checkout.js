@@ -8,7 +8,7 @@ const stripe = Stripe(
 
 const callApi = () => {
   fetch("/api/stripe", {
-    // method: "POST",
+    method: "POST",
   })
     .then((response) => response.json())
     .then((response) => console.log(response))
