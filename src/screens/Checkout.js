@@ -12,16 +12,16 @@ const callApi = () => {
   })
     .then((response) => response.json())
 
-    .then(function (session) {
+    .then((session) => {
       return stripe.redirectToCheckout({ sessionId: session.id });
     })
-    .then(function (result) {
-      if (result.error) {
-        alert(result.error.message);
+    .then((result) => {
+      if (result.err) {
+        alert(result.err.message);
       }
     })
-    .catch(function (error) {
-      console.error("Error:", error);
+    .catch((err) => {
+      console.error("Error:", err);
     });
 };
 
