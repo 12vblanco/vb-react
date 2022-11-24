@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import { IoMdClose } from "react-icons/io";
+import styled from "styled-components";
 import { CartContext } from "../aux/CartContext";
 import Checkout from "../screens/Checkout";
-import styled from "styled-components";
 import CartProduct from "./CartProduct";
 
 const Modal = ({ handleClose }) => {
@@ -69,11 +69,11 @@ const Modal = ({ handleClose }) => {
                   £{cart.getTotalCost().toFixed(2)}
                 </span>
               </p>
-              <ChkButton
+              <div
               // onClick={checkout}
               >
                 <Checkout />
-              </ChkButton>
+              </div>
             </RowDiv>
           </>
         ) : (
@@ -137,18 +137,6 @@ const Close = styled.div`
   @media (max-width: 460px) {
     font-size: 40px;
   }
-`;
-
-const ChkButton = styled.button`
-  background-color: #fff;
-  color: #333;
-  padding: 10px 16px;
-  border-radius: 1.2rem;
-  font-size: 18px;
-  font-weight: 700;
-  cursor: pointer;
-  z-index: 110;
-  border: 0.2rem solid #333;
 `;
 
 const RowDiv = styled.div`

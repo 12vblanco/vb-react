@@ -28,8 +28,8 @@ exports.handler = async (event, context) => {
       },
     ],
     mode: "payment",
-    success_url: "/success",
-    cancel_url: "/cancel",
+    success_url: "https://vb-react.netlify.app/success",
+    cancel_url: "https://vb-react.netlify.app/cancel",
   });
 
   return {
