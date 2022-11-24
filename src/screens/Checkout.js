@@ -8,7 +8,7 @@ const stripe = Stripe(
 
 const callApi = (event) => {
   event.preventDefault();
-  fetch("/api/stripe", {
+  fetch("../../netlify/functions/stripe", {
     method: "POST",
   })
     .then(function (response) {
@@ -30,13 +30,11 @@ const callApi = (event) => {
 const Checkout = () => {
   return (
     <div>
-      <form action="/api/stripe" onSubmit={callApi}>
-        <ChkButton
-        // type="submit" onClick={callApi}
-        >
-          Checkout
-        </ChkButton>
-      </form>
+      {/* <form action="/api/stripe" onSubmit={callApi}> */}
+      <ChkButton type="submit" onClick={callApi}>
+        Checkout
+      </ChkButton>
+      {/* </form> */}
     </div>
   );
 };
