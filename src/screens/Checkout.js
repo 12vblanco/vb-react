@@ -10,8 +10,8 @@ const Checkout = () => {
   return (
     <div>
       <form
-        action="https://vb-react.netlify.app/create-checkout-session"
-        method="POST"
+      // action="https://vb-react.netlify.app/create-checkout-session"
+      // method="POST"
       >
         <ChkButton
           type="submit"
