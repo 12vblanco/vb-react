@@ -7,25 +7,23 @@ const stripe = Stripe(
 );
 
 const callApi = () => {
-  {
-    fetch("/api/stripe", {
-      method: "POST",
+  fetch("/api/stripe", {
+    method: "POST",
+  })
+    .then(function (response) {
+      return response.json();
     })
-      .then(function (response) {
-        return response.json();
-      })
-      .then(function (session) {
-        return stripe.redirectToCheckout({ sessionId: session.id });
-      })
-      .then(function (result) {
-        if (result.error) {
-          alert(result.error.message);
-        }
-      })
-      .catch(function (error) {
-        console.error("Error:", error);
-      });
-  }
+    .then(function (session) {
+      return stripe.redirectToCheckout({ sessionId: session.id });
+    })
+    .then(function (result) {
+      if (result.error) {
+        alert(result.error.message);
+      }
+    })
+    .catch(function (error) {
+      console.error("Error:", error);
+    });
 };
 
 const Checkout = () => {
