@@ -6,13 +6,13 @@ const stripe = Stripe(
   "pk_test_51HqgwdGKpDMhyEuL11A63hDc42CNdjZbMH93xDPIumVyYlgGe5byVF9rXhgW0rs64r0uaDjQUqlwOUDXrbTZy9nx00cyCIwiBm"
 );
 
-const callApi = (event) => {
-  event.preventDefault();
-  fetch("../../netlify/functions/stripe", {
+const callApi = () => {
+  fetch("/api/stripe", {
     method: "POST",
   })
-    .then((response) => response.json())
-
+    .then(function (response) {
+      return response.json();
+    })
     .then(function (session) {
       return stripe.redirectToCheckout({ sessionId: session.id });
     })
@@ -29,11 +29,11 @@ const callApi = (event) => {
 const Checkout = () => {
   return (
     <div>
-      {/* <form action="/api/stripe" onSubmit={callApi}> */}
-      <ChkButton type="submit" onClick={callApi}>
-        Checkout
-      </ChkButton>
-      {/* </form> */}
+      <form action="/create-checkout-session" method="POST">
+        <ChkButton type="submit" onClick={callApi}>
+          Checkout
+        </ChkButton>
+      </form>
     </div>
   );
 };
