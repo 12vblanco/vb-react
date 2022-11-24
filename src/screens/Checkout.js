@@ -11,7 +11,7 @@ const callApi = (event) => {
   fetch("../../netlify/functions/stripe", {
     method: "POST",
   })
-    .then.then((response) => response.json())
+    .then((response) => response.json())
 
     .then(function (session) {
       return stripe.redirectToCheckout({ sessionId: session.id });
