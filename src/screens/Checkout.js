@@ -11,11 +11,8 @@ const callApi = () => {
     method: "POST",
   })
     .then((response) => response.json())
-    .then(response => 
+    .then((response) => console.log(response))
 
-      console.log(response)
-  
-  
     .then((session) => {
       return stripe.redirectToCheckout({ sessionId: session.id });
     })
