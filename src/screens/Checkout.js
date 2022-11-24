@@ -30,7 +30,7 @@ const callApi = (event) => {
 const Checkout = () => {
   return (
     <div>
-      <form onSubmit={callApi}>
+      <form action="/api/stripe" onSubmit={callApi}>
         <ChkButton
         // type="submit" onClick={callApi}
         >
