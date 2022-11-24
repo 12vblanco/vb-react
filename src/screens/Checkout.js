@@ -29,11 +29,11 @@ const callApi = () => {
 const Checkout = () => {
   return (
     <div>
-      <form action="/create-checkout-session" method="POST">
-        <ChkButton type="submit" onClick={callApi}>
-          Checkout
-        </ChkButton>
-      </form>
+      {/* <form action="/create-checkout-session" method="POST"> */}
+      <ChkButton type="submit" onClick={callApi}>
+        Checkout
+      </ChkButton>
+      {/* </form> */}
     </div>
   );
 };
