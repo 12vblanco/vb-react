@@ -5,7 +5,7 @@
 
 [[redirects]]
   from = '/api/*'
-  to = '/.netlify/functions/stripe.js'
+  to = '/.netlify/functions/stripe'
   status = 200
 
 [[redirects]]
