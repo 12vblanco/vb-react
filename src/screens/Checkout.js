@@ -29,10 +29,7 @@ const callApi = () => {
 const Checkout = () => {
   return (
     <div>
-      <form
-        action="https://vb-react.netlify.app/create-checkout-session"
-        method="POST"
-      >
+      <form action="/create-checkout-session" method="POST">
         <ChkButton type="submit" onClick={callApi}>
           Checkout
         </ChkButton>
