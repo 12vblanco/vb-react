@@ -18,5 +18,3 @@
   to = '/home'
   status = 200
 
-[[plugins]]
-package = "@netlify/plugin-nextjs"
