@@ -4,8 +4,8 @@
   publish = "."
 
 [[redirects]]
-  from = '/api/stripe'
-  to = '/netlify/functions/stripe'
+  from = '/api/*'
+  to = '/netlify/functions/:splat'
   status = 200
 
 [[redirects]]
@@ -14,6 +14,6 @@
   status = 200
 
 [[redirects]]
-  from = '/contact'
+  from = '/bio'
   to = '/home'
   status = 200
