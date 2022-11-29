@@ -7,7 +7,7 @@ const stripe = Stripe(
 );
 
 const callApi = (e) => {
-  // e.preventDefault();
+  e.preventDefault();
   fetch("/api/stripe", {
     method: "POST",
   })
