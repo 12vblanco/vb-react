@@ -31,14 +31,12 @@ const Checkout = () => {
   return (
     <div>
       <form onSubmit={callApi}>
-        <a href="https://buy.stripe.com/test_9AQ8xX2D27df5d6bII">
-          <ChkButton
-            type="submit"
-            // onClick={callApi}
-          >
-            Checkout
-          </ChkButton>
-        </a>
+        <ChkButton
+          type="submit"
+          // onClick={callApi}
+        >
+          Checkout
+        </ChkButton>
       </form>
     </div>
   );
