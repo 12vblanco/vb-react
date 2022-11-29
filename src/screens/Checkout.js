@@ -15,7 +15,7 @@ const callApi = (e) => {
     .then((response) => console.log(response))
 
     .then((session) => {
-      return Stripe.redirectToCheckout({ sessionId: session.id });
+      return stripe.redirectToCheckout({ sessionId: session.id });
     })
     .then((result) => {
       if (result.err) {
