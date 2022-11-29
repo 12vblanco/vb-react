@@ -6,26 +6,26 @@ exports.handler = async (event, context) => {
     line_items: [
       {
         price_data: {
-          currency: "gbp",
+          currency: "usd",
           product_data: {
             id: "price_1LxHk4GKpDMhyEuL53Xfr9oB",
-            name: "Prunus serrulata 'Kanzan'",
+            name: "Prunus serrulata",
           },
-          // price: 60,
+          unit_amount: 2000,
         },
         quantity: 1,
       },
-      {
-        price_data: {
-          currency: "gbp",
-          product_data: {
-            id: "price_1LxHiBGKpDMhyEuLOkox92AU",
-            name: "Cupressus x leylandii",
-          },
-          // price: 90,
-        },
-        quantity: 1,
-      },
+      // {
+      //   price_data: {
+      //     currency: "gbp",
+      //     product_data: {
+      //       id: "price_1LxHiBGKpDMhyEuLOkox92AU",
+      //       name: "Cupressus x leylandii",
+      //     },
+      //     // price: 90,
+      //   },
+      //   quantity: 1,
+      // },
     ],
     mode: "payment",
     success_url: "https://vb-react.netlify.app/success",
