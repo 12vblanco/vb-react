@@ -6,8 +6,8 @@ const stripe = Stripe(
   "pk_test_51HqgwdGKpDMhyEuL11A63hDc42CNdjZbMH93xDPIumVyYlgGe5byVF9rXhgW0rs64r0uaDjQUqlwOUDXrbTZy9nx00cyCIwiBm"
 );
 
-const callApi = (e) => {
-  e.preventDefault();
+const callApi = () => {
+  // e.preventDefault()
   fetch("/api/stripe", {
     method: "POST",
   })
@@ -30,8 +30,12 @@ const callApi = (e) => {
 const Checkout = () => {
   return (
     <div>
-      <form onSubmit={callApi}>
-        <ChkButton type="submit">Checkout</ChkButton>
+      <form
+      // onSubmit={callApi}
+      >
+        <ChkButton type="submit" onClick={callApi}>
+          Checkout
+        </ChkButton>
       </form>
     </div>
   );
