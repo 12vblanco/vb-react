@@ -30,10 +30,11 @@ const callApi = (e) => {
 const Checkout = () => {
   return (
     <div>
-      <form
-      // onSubmit={callApi}
-      >
-        <ChkButton type="submit" onClick={callApi}>
+      <form onSubmit={callApi}>
+        <ChkButton
+          type="submit"
+          // onClick={callApi}
+        >
           Checkout
         </ChkButton>
       </form>
