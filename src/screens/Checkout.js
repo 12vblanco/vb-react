@@ -7,7 +7,7 @@ const stripe = Stripe(
 );
 
 const callApi = (e) => {
-  e.preventDefault();
+  // e.preventDefault();
   fetch("/api/stripe", {
     method: "POST",
   })
@@ -30,11 +30,10 @@ const callApi = (e) => {
 const Checkout = () => {
   return (
     <div>
-      <form onSubmit={callApi}>
-        <ChkButton
-          type="submit"
-          // onClick={callApi}
-        >
+      <form
+      // onSubmit={callApi}
+      >
+        <ChkButton type="submit" onClick={callApi}>
           Checkout
         </ChkButton>
       </form>
