@@ -30,11 +30,10 @@ exports.handler = async (event, context, callback) => {
     success_url: "https://vb-react.netlify.app/success",
     cancel_url: "https://vb-react.netlify.app/cancel",
   });
-  console.log(session.id, "this");
   return {
     statusCode: 200,
     body: JSON.stringify({
-      id: session.id,
+      id: 1,
     }),
   };
 };
