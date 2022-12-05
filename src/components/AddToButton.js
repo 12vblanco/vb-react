@@ -21,7 +21,7 @@ const AddToButton = ({ product, handleShow }) => {
               </Minus>
               <Plus onClick={() => cart.addOneToCart(product.id)}>+</Plus>
             </RowDiv>
-            <Qty onClick={handleShow}>{productQty}</Qty>
+            <Qty onClick={() => handleShow}>{productQty}</Qty>
           </ColumnDiv>
         )}
       </AddToWrapper>

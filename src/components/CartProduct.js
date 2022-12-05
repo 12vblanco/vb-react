@@ -15,7 +15,7 @@ const CartProduct = (props) => {
         <Img alt="A print of the rings of a tree" src={productData.img} />
         <ColumnDiv>
           <Name>{productData.name}</Name>
-          <Qty>
+          <QtyDiv>
             {quantity > 1 ? (
               <Qty>
                 {quantity}
@@ -27,7 +27,7 @@ const CartProduct = (props) => {
                 <span> unit</span>
               </Qty>
             )}
-          </Qty>
+          </QtyDiv>
           <Price>Price: £ {(quantity * productData.price).toFixed(2)}</Price>
 
           <RowDiv>
@@ -72,6 +72,11 @@ const Qty = styled.h3`
     color: #333;
     font-size: 18px;
   }
+`;
+const QtyDiv = styled.div`
+  color: #a52a2a;
+  font-size: 18px;
+  font-weight: 300;
 `;
 const Price = styled.h3`
   color: #333;

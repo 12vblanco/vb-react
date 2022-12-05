@@ -9,6 +9,7 @@ exports.handler = async (event, context) => {
           currency: "gbp",
           product_data: {
             name: "Prunus serrulata",
+            id: "price_1LxHk4GKpDMhyEuL53Xfr9oB",
           },
           unit_amount: 2000,
         },
