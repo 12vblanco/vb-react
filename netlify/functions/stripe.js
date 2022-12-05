@@ -8,8 +8,25 @@ exports.handler = async (event, context, callback) => {
         price_data: {
           currency: "usd",
           product_data: {
-            id: "prod_Mgf4xpHnATQIbj",
+            object: "product",
+            active: true,
+            created: 1666821992,
+            default_price: "price_1LxHk4GKpDMhyEuL53Xfr9oB",
+            description:
+              '      "Print section the main stem of Cherry Tree with large decay pockets. Print 320 x 350 mm approx. Paper (420 x 594 mm).',
+            images: [
+              "https://files.stripe.com/links/MDB8YWNjdF8xSHFnd2RHS3BETWh5RXVMfGZsX3Rlc3RfREJ0S2NibGR1VEs0MjdpWkNodnZ3algx00GVfjicjz",
+            ],
+            livemode: false,
+            metadata: {},
             name: "Prunus serrulata",
+            package_dimensions: null,
+            shippable: null,
+            statement_descriptor: null,
+            tax_code: null,
+            unit_label: null,
+            updated: 1669256534,
+            url: null,
           },
           unit_amount: 2000,
         },
