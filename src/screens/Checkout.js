@@ -32,8 +32,7 @@ const Checkout = () => {
     <div>
       <form onSubmit={callApi}>
         <ChkButton
-          type="submit"
-          // onClick={callApi}
+        // type="submit" method="POST" onClick={callApi}
         >
           Checkout
         </ChkButton>
