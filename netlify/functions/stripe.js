@@ -8,6 +8,7 @@ exports.handler = async (event, context, callback) => {
         price_data: {
           currency: "usd",
           product_data: {
+            id: "prod_Mgf4xpHnATQIbj",
             name: "Prunus serrulata",
           },
           unit_amount: 2000,
@@ -33,7 +34,7 @@ exports.handler = async (event, context, callback) => {
   return {
     statusCode: 200,
     body: JSON.stringify({
-      id: 1,
+      id: session.id,
     }),
   };
 };
