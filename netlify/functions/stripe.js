@@ -8,7 +8,6 @@ exports.handler = async (event, context) => {
         price_data: {
           currency: "usd",
           product_data: {
-            id: "prod_Mgf4xpHnATQIbj",
             object: "product",
             name: "Prunus serrulata",
             default_price: "price_1LxHk4GKpDMhyEuL53Xfr9oB",
