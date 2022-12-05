@@ -6,12 +6,14 @@ exports.handler = async (event, context) => {
     line_items: [
       {
         price_data: {
-          currency: "gbp",
+          currency: "usd",
           product_data: {
+            id: "prod_Mgf4xpHnATQIbj",
+            object: "product",
             name: "Prunus serrulata",
-            id: "price_1LxHk4GKpDMhyEuL53Xfr9oB",
+            default_price: "price_1LxHk4GKpDMhyEuL53Xfr9oB",
           },
-          unit_amount: 2000,
+          // unit_amount: 2000,
         },
         quantity: 1,
       },
