@@ -10,7 +10,7 @@ const Modal = ({ handleClose }) => {
 
   // const checkout = async () => {
   //   alert("you are being redirected to stripe");
-  //   await fetch("http://localhost:4000/checkout", {
+  //   await fetch("api/stripe", {
   //     method: "POST",
   //     headers: {
   //       "Content-Type": "application/json",
@@ -72,7 +72,7 @@ const Modal = ({ handleClose }) => {
               <div
               // onClick={checkout}
               >
-                <Checkout />
+                <Checkout cart={cart} />
               </div>
             </RowDiv>
           </>

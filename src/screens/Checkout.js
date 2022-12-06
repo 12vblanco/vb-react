@@ -6,8 +6,7 @@ const stripe = Stripe(
   "pk_test_51HqgwdGKpDMhyEuL11A63hDc42CNdjZbMH93xDPIumVyYlgGe5byVF9rXhgW0rs64r0uaDjQUqlwOUDXrbTZy9nx00cyCIwiBm"
 );
 
-const callApi = (e) => {
-  e.preventDefault();
+const callApi = () => {
   fetch("/api/stripe", {
     method: "POST",
   })
@@ -15,7 +14,7 @@ const callApi = (e) => {
     .then((response) => console.log(response))
 
     .then((session) => {
-      stripe.redirectToCheckout({ sessionId: session.id });
+      return stripe.redirectToCheckout({ sessionId: session.id });
     })
     .then((result) => {
       if (result.err) {
@@ -30,12 +29,11 @@ const callApi = (e) => {
 const Checkout = () => {
   return (
     <div>
-      <form onSubmit={callApi}>
-        <ChkButton
-        // type="submit" method="POST" onClick={callApi}
-        >
-          Checkout
-        </ChkButton>
+      <form
+        onSubmit={callApi}
+        // onSubmit={checkout}
+      >
+        <ChkButton>Checkout</ChkButton>
       </form>
     </div>
   );
