@@ -1,6 +1,6 @@
 const stripe = require("stripe")(process.env.STRIPE_SECRET_TEST);
 
-exports.handler = async () => {
+exports.handler = async (cart) => {
   const session = await stripe.checkout.sessions.create({
     payment_method_types: ["card"],
     line_items: [
@@ -23,6 +23,7 @@ exports.handler = async () => {
     statusCode: 200,
     body: JSON.stringify({
       id: session.id,
+      items: cart.items,
     }),
   };
 };
