@@ -14,9 +14,10 @@ const callApi = () => {
       console.log(response); // Log the response object to the console
       return response.json();
     })
-    .then((session) => {
-      console.log(session); // Log the session object to the console
-      return stripe.redirectToCheckout({ sessionId: session.id });
+    .then((response) => {
+      if (response.url) {
+        window.location.assign(response.url); // Forwarding user to Stripe
+      }
     })
     .then((result) => {
       if (result.err) {
