@@ -1,6 +1,6 @@
 const stripe = require("stripe")(process.env.STRIPE_SECRET_TEST);
 
-exports.handler = async (event, context) => {
+exports.handler = async () => {
   const session = await stripe.checkout.sessions.create({
     payment_method_types: ["card"],
     line_items: [
@@ -16,8 +16,8 @@ exports.handler = async (event, context) => {
       },
     ],
     mode: "payment",
-    success_url: "https://vb-react.netlify.app//success",
-    cancel_url: "https://vb-react.netlify.app//cancel",
+    success_url: "https://vb-react.netlify.app/success",
+    cancel_url: "https://vb-react.netlify.app/cancel",
   });
   return {
     statusCode: 200,
