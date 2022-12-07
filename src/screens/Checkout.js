@@ -6,21 +6,25 @@ const stripe = Stripe(
   "pk_test_51HqgwdGKpDMhyEuL11A63hDc42CNdjZbMH93xDPIumVyYlgGe5byVF9rXhgW0rs64r0uaDjQUqlwOUDXrbTZy9nx00cyCIwiBm"
 );
 
-const callApi = async (cart) => {
-  alert("you are being redirected to stripe");
-  await fetch("api/stripe", {
+const callApi = () => {
+  fetch("/api/stripe", {
     method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({ items: cart.items }),
   })
     .then((response) => {
+      console.log(response); // Log the response object to the console
       return response.json();
     })
     .then((session) => {
       console.log(session); // Log the session object to the console
       return stripe.redirectToCheckout({ sessionId: session.id });
+    })
+    .then((result) => {
+      if (result.err) {
+        return alert(result.err.message);
+      }
+    })
+    .catch((err) => {
+      return console.error("Error:", err);
     });
 };
 
