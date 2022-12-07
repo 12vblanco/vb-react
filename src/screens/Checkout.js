@@ -6,14 +6,18 @@ const stripe = Stripe(
   "pk_test_51HqgwdGKpDMhyEuL11A63hDc42CNdjZbMH93xDPIumVyYlgGe5byVF9rXhgW0rs64r0uaDjQUqlwOUDXrbTZy9nx00cyCIwiBm"
 );
 
-const callApi = () => {
+const callApi = (e) => {
+  e.preventDefault();
   fetch("/api/stripe", {
     method: "POST",
   })
     .then((response) => {
+      console.log(response);
+
       return response.json();
     })
     .then((session) => {
+      console.log(session);
       return stripe.redirectToCheckout({ sessionId: session.id });
     })
     .then((result) => {
