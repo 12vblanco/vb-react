@@ -23,7 +23,7 @@ exports.handler = async (cart) => {
     statusCode: 200,
     body: JSON.stringify({
       id: session.id,
-      items: "cart.items",
+      items: cart.items,
     }),
   };
 };
