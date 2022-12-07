@@ -11,13 +11,10 @@ const callApi = () => {
     method: "POST",
   })
     .then((response) => {
-      console.log(response); // Log the response object to the console
       return response.json();
     })
-    .then((response) => {
-      if (response.url) {
-        window.location.assign(response.url); // Forwarding user to Stripe
-      }
+    .then((session) => {
+      return stripe.redirectToCheckout({ sessionId: session.id });
     })
     .then((result) => {
       if (result.err) {
