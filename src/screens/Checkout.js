@@ -18,6 +18,7 @@ const callApi = (e) => {
     })
     .then((session) => {
       console.log(session);
+      console.log(stripe);
       return stripe.redirectToCheckout({ sessionId: session.id });
     })
     .then((result) => {
@@ -32,14 +33,9 @@ const callApi = (e) => {
 
 const Checkout = () => {
   return (
-    <div>
-      <form
-        onSubmit={callApi}
-        // onSubmit={checkout}
-      >
-        <ChkButton>Checkout</ChkButton>
-      </form>
-    </div>
+    <form onSubmit={callApi}>
+      <ChkButton>Checkout</ChkButton>
+    </form>
   );
 };
 
