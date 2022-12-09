@@ -1,8 +1,8 @@
-import { loadStripe } from "@stripe/stripe-js";
+import Stripe from "@stripe/stripe-js";
 import React from "react";
 import styled from "styled-components";
 
-const stripe = loadStripe(
+const stripe = Stripe(
   "pk_test_51HqgwdGKpDMhyEuL11A63hDc42CNdjZbMH93xDPIumVyYlgGe5byVF9rXhgW0rs64r0uaDjQUqlwOUDXrbTZy9nx00cyCIwiBm"
 );
 

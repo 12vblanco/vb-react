@@ -1,4 +1,4 @@
-const stripe = require("loadStripe")(process.env.STRIPE_SECRET_TEST);
+const stripe = require("stripe")(process.env.STRIPE_SECRET_TEST);
 
 exports.handler = async () => {
   const session = await stripe.checkout.sessions.create({
