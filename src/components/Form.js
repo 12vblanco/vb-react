@@ -10,9 +10,10 @@ const Form = (props) => {
         <br />
         We have some exciting news to share with you! <br />
         Our shop will be temporarily closed from April to September. However,
-        fret not! You can still place orders{" "}
+        fret not! You can still{" "}
         <span>
-          before April 1st or pre-order for when we re-open in September.
+          place orders before April 1st or pre-order for when we re-open in
+          September.
         </span>
         <br />
         If you're eager to get your hands on some of our amazing products,
