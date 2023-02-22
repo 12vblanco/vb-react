@@ -3,7 +3,6 @@ import styled from "styled-components";
 import Footer from "../components/Footer";
 import MainContainer from "../components/MainContainer";
 import Pagination from "../components/Pagination";
-import ShopWidget from "../components/ShopWidget";
 import { products } from "../products/Products";
 
 const {
@@ -64,7 +63,7 @@ const Leylandii = () => {
                   <Img src={img} />
                 </ColImg>
               )}
-              <ShopWidget id={id} price={price} />{" "}
+              {/* <ShopWidget id={id} price={price} />{" "} */}
               {isMobile && <Description>{description}</Description>}
               <Pagination previous={previous} next={next} />
             </ColText>
