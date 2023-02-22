@@ -7,7 +7,7 @@ import { products } from "../products/Products";
 
 const {
   name,
-  id,
+  // id,
   format,
   price,
   description,
