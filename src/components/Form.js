@@ -11,7 +11,9 @@ const Form = (props) => {
         We have some exciting news to share with you! <br />
         Our shop will be temporarily closed from April to September. However,
         fret not! You can still place orders{" "}
-        <b>before April 1st or pre-order for when we re-open in September.</b>
+        <span>
+          before April 1st or pre-order for when we re-open in September.
+        </span>
         <br />
         If you're eager to get your hands on some of our amazing products,
         simply fill out our form and we'll be sure to get back to you. <br />
@@ -93,6 +95,10 @@ const H1 = styled.h1`
   padding: 2rem;
   border-radius: 0.8rem;
   background: rgba(213, 221, 224, 0.4);
+
+  span {
+    font-weight: bold;
+  }
 `;
 
 const Input = styled.input`
