@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
 import styled from "styled-components";
-import Cart from "../Cart";
 import NavMenu from "./NavMenu";
 
 const BurgerMenu = ({ handleShow, handleClose }) => {
@@ -24,7 +23,7 @@ const BurgerMenu = ({ handleShow, handleClose }) => {
           {!click && (
             <>
               <GiHamburgerMenu onClick={clickHandler} />
-              <Cart handleShow={handleShow} />
+              {/* <Cart handleShow={handleShow} /> */}
             </>
           )}
         </MenuIcon>
@@ -50,10 +49,7 @@ const BurgerDiv = styled.div`
   margin-top: 2.2rem;
   flex: 1;
   margin-right: 4%;
-  /* /* @media (max-width: 685px) {
-    flex: initial;
-    margin-top: 2rem;
-  } */
+
   @media (max-width: 640) {
     flex: initial;
     margin: 0;
@@ -79,10 +75,9 @@ const MenuIcon = styled.div`
 const BurgerToggled = styled.div`
   position: absolute;
   text-align: center;
-  padding-top: 30%;
-  top: 140px;
+  padding-top: 10%;
+  top: 125px;
   background: #f4f7f8;
-  /* z-index: 12; */
 `;
 
 const IconClose = styled(MdClose)`

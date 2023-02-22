@@ -12,6 +12,7 @@ const CartProduct = (props) => {
   return (
     <>
       <RowDiv style={{ marginTop: "28px" }}>
+        å
         <Img alt="A print of the rings of a tree" src={productData.img} />
         <ColumnDiv>
           <Name>{productData.name}</Name>

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { ImInfo } from "react-icons/im";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import AddToButton from "../components/AddToButton";
 
 const Product = ({ handleShow, product }) => {
   const [showInfo, setShowInfo] = useState(false);
@@ -35,11 +34,11 @@ const Product = ({ handleShow, product }) => {
             <Name>{product.name}</Name>
             <RowDiv style={{ width: "254px" }}>
               <Format>{product.format}</Format>
-              <Price>£{product.price}</Price>
             </RowDiv>
           </ColumnDiv>
+          <Price>£{product.price}</Price>
 
-          <AddToButton product={product} handleShow={handleShow}></AddToButton>
+          {/* <AddToButton product={product} handleShow={handleShow}></AddToButton> */}
         </RowDiv>
       </ProductWrapper>
     </>
@@ -74,6 +73,7 @@ const RowDiv = styled.div`
   width: 100%;
   align-items: center;
   justify-content: space-around;
+  margin-top: 8px;
 `;
 
 const Img = styled.img`
@@ -94,6 +94,7 @@ const Format = styled.h4`
   font-size: 16px;
   font-weight: 100;
   margin-top: -6px;
+  margin-left: -50px;
   z-index: 123;
 `;
 
@@ -103,7 +104,8 @@ const Price = styled.span`
   position: relative;
   font-weight: 500;
   top: -3px;
-  margin-left: 4px;
+  /* margin-left: 4px; */
+  margin-right: 24px;
 `;
 
 const Info = styled.div`

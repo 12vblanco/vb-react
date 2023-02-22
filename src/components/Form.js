@@ -1,11 +1,18 @@
 import React from "react";
 import styled from "styled-components";
-import MainContainer from "./MainContainer";
 
 const Form = (props) => {
   return (
-    <MainContainer>
-      <H1>Please send us any requests or queries using this form:</H1>
+    <Container>
+      <H1>
+        Our shop will be temporarily closed from April to September. <br />
+        We will take orders before April the 1st or pre-orders for when we
+        re-open in September.
+        <br /> Please send us any requests using this form and we will get back
+        to you.
+        <br />
+        Sorry for any inconvenience caused!
+      </H1>
       <FromContainer>
         <form
           name="contact"
@@ -49,9 +56,17 @@ const Form = (props) => {
           </p>
         </form>
       </FromContainer>
-    </MainContainer>
+    </Container>
   );
 };
+
+const Container = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 4%;
+`;
 
 const FromContainer = styled.div`
   display: flex;
@@ -65,26 +80,26 @@ const FromContainer = styled.div`
 
 const H1 = styled.h1`
   width: 62.5rem;
-  font-size: 22px;
+  font-size: 20px;
   padding-left: 3rem;
   margin-bottom: 1rem;
   font-weight: 300;
-  margin-top: -100px;
-  padding: 0.6rem 0.75rem 1rem 0.75rem;
+  /* margin-top: -100px; */
+  padding: 2rem;
   border-radius: 0.8rem;
   background: rgba(213, 221, 224, 0.4);
 `;
 
 const Input = styled.input`
   width: 50rem;
-  padding: 7px;
+  padding: 9px;
   height: 32px;
   border-radius: 0.6rem;
   outline: 0.2rem solid black;
   position: relative;
   left: 50%;
   transform: translate(-50%);
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 `;
 const TextArea = styled.textarea`
   font-family: "Poppins, sans-serif";

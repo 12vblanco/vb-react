@@ -3,7 +3,6 @@ import { FaRegEnvelope } from "react-icons/fa";
 import { GrInstagram } from "react-icons/gr";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import Cart from "../Cart";
 
 const NavMenu = ({ handleShow, closeMenu }) => {
   return (
@@ -36,7 +35,7 @@ const NavMenu = ({ handleShow, closeMenu }) => {
       </StyledLink>
 
       <StyledLink style={{ marginLeft: "18px", cursor: "pointer" }}>
-        <Cart handleShow={handleShow} onClick={handleShow} />
+        {/* <Cart handleShow={handleShow} onClick={handleShow} /> */}
       </StyledLink>
     </>
   );

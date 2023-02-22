@@ -64,7 +64,7 @@ const Douglas = () => {
                   <Img src={img} />
                 </ColImg>
               )}
-              <ShopWidget id={id} price={price} />{" "}
+              {/* <ShopWidget id={id} price={price} />{" "} */}
               {isMobile && <Description>{description}</Description>}
               <Pagination previous={previous} next={next} />
             </ColText>
