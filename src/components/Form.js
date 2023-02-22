@@ -85,7 +85,7 @@ const FromContainer = styled.div`
 
 const H1 = styled.h1`
   width: 62.5rem;
-  font-size: 18px;
+  font-size: 17px;
   padding-left: 3rem;
   margin-bottom: 1rem;
   font-weight: 300;
