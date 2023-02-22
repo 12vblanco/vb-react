@@ -32,9 +32,7 @@ const Product = ({ handleShow, product }) => {
         <RowDiv style={{ paddingTop: "40px" }}>
           <ColumnDiv>
             <Name>{product.name}</Name>
-            <RowDiv style={{ width: "254px" }}>
-              <Format>{product.format}</Format>
-            </RowDiv>
+            <Format>{product.format}</Format>
           </ColumnDiv>
           <Price>£{product.price}</Price>
 
@@ -47,7 +45,7 @@ const Product = ({ handleShow, product }) => {
 
 const ProductWrapper = styled.div`
   width: 340px;
-  height: 530px;
+  height: 520px;
   background: white;
   margin: auto;
   position: relative;
@@ -65,8 +63,6 @@ const ProductWrapper = styled.div`
 const ColumnDiv = styled.div`
   display: flex;
   flex-direction: column;
-  padding-left: 8px;
-  width: 100%;
 `;
 const RowDiv = styled.div`
   display: flex;
@@ -93,19 +89,20 @@ const Name = styled.h2`
 const Format = styled.h4`
   font-size: 16px;
   font-weight: 100;
-  margin-top: -6px;
-  margin-left: -50px;
+  /* margin-top: -6px;
+  margin-left: -50px; */
   z-index: 123;
 `;
 
 const Price = styled.span`
-  font-size: 18px;
+  font-size: 28px;
   color: #a52a2a;
   position: relative;
   font-weight: 500;
-  top: -3px;
+  /* top: -3px; */
   /* margin-left: 4px; */
-  margin-right: 24px;
+  margin-top: 4px;
+  margin-right: 4px;
 `;
 
 const Info = styled.div`
