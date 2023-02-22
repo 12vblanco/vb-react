@@ -13,7 +13,7 @@ const Footer = () => {
             <span>&nbsp;&nbsp;</span>
           </NavLink>{" "}
           <NavLink to="/terms"> Terms & conditions</NavLink> <span>&nbsp;</span>
-          <FaReact style={{ fontSize: "1.6rem" }} />{" "}
+          <FaReact style={{ fontSize: "1.6rem", marginBottom: "-3px" }} />{" "}
         </Div>
       </FooterDiv>
     </>
