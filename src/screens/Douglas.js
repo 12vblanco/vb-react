@@ -3,12 +3,12 @@ import styled from "styled-components";
 import Footer from "../components/Footer";
 import MainContainer from "../components/MainContainer";
 import Pagination from "../components/Pagination";
-import ShopWidget from "../components/ShopWidget";
+// import ShopWidget from "../components/ShopWidget";
 import { products } from "../products/Products";
 
 const {
   name,
-  id,
+  // id,
   format,
   price,
   description,
