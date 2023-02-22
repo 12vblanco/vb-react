@@ -5,13 +5,18 @@ const Form = (props) => {
   return (
     <Container>
       <H1>
-        Our shop will be temporarily closed from April to September. <br />
-        We will take orders before April the 1st or pre-orders for when we
-        re-open in September.
-        <br /> Please send us any requests using this form and we will get back
-        to you.
+        Hello there!
         <br />
-        Sorry for any inconvenience caused!
+        <br />
+        We have some exciting news to share with you! <br />
+        Our shop will be temporarily closed from April to September. However,
+        fret not! You can still place orders{" "}
+        <b>before April 1st or pre-order for when we re-open in September.</b>
+        <br />
+        If you're eager to get your hands on some of our amazing products,
+        simply fill out our form and we'll be sure to get back to you. <br />
+        We apologize for any inconvenience this may cause, but we promise it'll
+        be worth the wait! We can't wait to see you in September!
       </H1>
       <FromContainer>
         <form
@@ -65,7 +70,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 4%;
+  /* margin-top: 4%; */
 `;
 
 const FromContainer = styled.div`
@@ -80,7 +85,7 @@ const FromContainer = styled.div`
 
 const H1 = styled.h1`
   width: 62.5rem;
-  font-size: 20px;
+  font-size: 18px;
   padding-left: 3rem;
   margin-bottom: 1rem;
   font-weight: 300;
