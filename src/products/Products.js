@@ -32,7 +32,7 @@ const products = [
     description:
       "Print section the main stem of Cherry Tree with large decay pockets. \n\nPrint 320 x 350 mm approx.\nPaper (420 x 594 mm) \n\nPrints cannot be scaled as they are printed directly from the wood block. \nOther colours of ink and paper available on request. ",
     description2:
-      "This flowering cherry tree hybrid was first developed for its blossom in Japan during the Tokugawa period (1600 - 1800).\n\n It used to grow in Musselburgh, Scotland, on a grass lawn, and it was often damaged by lawn mowers and other machinery. This allowed for a decaying fungi to enter the hardwood and produce a vertical column of decay represented by the empty space in the lower half of the print.\n The base of the tree became unstable and the tree was felled for safety.",
+      "This species of flowering cherry tree hybrid were first developed for its blossom in Japan during the Tokugawa period (1600 - 1800).\n\n This one in particular, used to grow in Musselburgh, Scotland, on a grass lawn, and it was often damaged by lawn mowers and other machinery. This allowed for a decaying fungi to enter the hardwood and produce a vertical column of decay represented by the empty space in the lower half of the print.\n The base of the tree became unstable and the tree was felled for safety.",
     img: img2,
     link: "/prunusSerrulata",
     previous: "/leylandii",
@@ -74,7 +74,7 @@ const products = [
     description:
       "Section of Norway Maple on A2 white paper, printed with metallic gold ink. \n\nPrint 310 x 385 mm approx.\nPaper (420 x 594 mm) \n\nPrints cannot be scaled as they are printed directly from the wood block. \nOther colours of ink and paper available on request. ",
     description2:
-      "This Norway Maple was growing in a park in the town of Musselburgh, Scotland.\n\n The lower section of the trunk from about half of the tree size had a large decay pocket from an old wound, possibly the product of vandalism.\n\nTha main canopy fork had also developed a crack and due to its proximity to a play area the tree was felled.",
+      "This Norway Maple lived in a park in the town of Musselburgh, Scotland.\n\n The lower section of the trunk from about half of the tree size had a large decay pocket from an old wound, possibly the product of vandalism.\n\nTha main canopy fork had also developed a crack and due to its proximity to a play area the tree was felled.",
     img: img5,
     link: "/platanoides",
     previous: "/sycamore",

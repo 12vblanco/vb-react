@@ -18,3 +18,8 @@
   to = '/home'
   status = 200
 
+[[redirects]]
+  from = '/*'
+  to = '/home'
+  status = 200
+
