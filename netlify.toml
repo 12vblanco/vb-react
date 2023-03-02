@@ -17,9 +17,10 @@
   from = '/contact'
   to = '/home'
   status = 200
-
+  
 [[redirects]]
-  from = '/*'
+  from = '/contact'
   to = '/home'
-  status = 200
+  status = 404
+
 
