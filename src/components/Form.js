@@ -127,6 +127,7 @@ const TextArea = styled.textarea`
 `;
 
 const Checkbox = styled.input`
+  margin-top: 12px;
   height: 22px;
   width: 22px;
   outline: 0.2rem solid black;
