@@ -27,6 +27,8 @@ const Form = (props) => {
           method="post"
           data-netlify-honeypot="bot-field"
           data-netlify-recaptcha="true"
+          onSubmit="submit"
+          action="/success"
         >
           <input type="hidden" name="form-name" value="contact" />
           <p>

@@ -12,10 +12,11 @@ const Form = (props) => {
       </H1>
       <FromContainer>
         <form
-          name="contact"
+          name="contact2"
           method="post"
           data-netlify-honeypot="bot-field"
           data-netlify-recaptcha="true"
+          onSubmit="submit"
         >
           <input type="hidden" name="form-name" value="contact" />
           <p>
