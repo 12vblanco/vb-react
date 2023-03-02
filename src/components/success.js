@@ -4,23 +4,6 @@ import styled from "styled-components";
 const Form = (props) => {
   return (
     <Container>
-      <H1>
-        Hello there!
-        <br />
-        <br />
-        We have some exciting news to share with you! <br />
-        Our shop will be temporarily closed from April to September. However,
-        fret not! You can still{" "}
-        <span>
-          place orders before April 1st or pre-order for when we re-open in
-          September.
-        </span>
-        <br />
-        If you're eager to get your hands on some of our amazing products,
-        simply fill out our form and we'll be sure to get back to you. <br />
-        We apologize for any inconvenience this may cause, but we promise it'll
-        be worth the wait! We can't wait to see you in September!
-      </H1>
       <FromContainer>
         <p>thanks</p>
       </FromContainer>
