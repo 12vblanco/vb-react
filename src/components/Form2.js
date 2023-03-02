@@ -12,7 +12,7 @@ const Form = (props) => {
       </H1>
       <FromContainer>
         <form
-          name="contact2"
+          name="contact"
           method="post"
           data-netlify-honeypot="bot-field"
           data-netlify-recaptcha="true"
