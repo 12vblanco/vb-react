@@ -6,6 +6,7 @@ import { theme } from "./branding/theme";
 import Navbar from "./components/navbar/NavBar";
 import Bio from "./screens/Bio";
 import Contact from "./screens/Contact";
+import ContactWebDev from "./screens/ContactWebDev";
 import Douglas from "./screens/Douglas";
 import FraxinusSmall from "./screens/FraxinusSmall";
 import Home from "./screens/Home";
@@ -28,6 +29,7 @@ function App({ handleShow }) {
           <Route path="/home" element={<Home />} />
           <Route path="/bio" element={<Bio />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/contactWebDev" element={<ContactWebDev />} />
           <Route path="/leylandii" element={<Leylandii />} />
           <Route path="/prunusSerrulata" element={<PrunusSerrulata />} />
           <Route path="/fraxinusSmall" element={<FraxinusSmall />} />

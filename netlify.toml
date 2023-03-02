@@ -17,6 +17,10 @@
   from = '/contact'
   to = '/home'
   status = 200
+[[redirects]]
+  from = '/contactWebDev'
+  to = '/home'
+  status = 200
 
 [[redirects]]
   from = '/*'
