@@ -2,7 +2,7 @@ import React from "react";
 // import styled from "styled-components";
 import MainContainer from "../components/MainContainer";
 
-const success = (props) => {
+const Success = (props) => {
   return (
     <MainContainer>
       <h1>success</h1>
@@ -10,4 +10,4 @@ const success = (props) => {
   );
 };
 
-export default success;
+export default Success;
