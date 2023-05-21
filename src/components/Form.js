@@ -1,7 +1,22 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
-const Form = (props) => {
+const Form = () => {
+  let navigate = useNavigate();
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+    let myForm = document.getElementById("contact-form");
+    let formData = new FormData(myForm);
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => navigate("/Success"))
+      .catch((error) => alert(error));
+  };
   return (
     <Container>
       <H1>
@@ -23,12 +38,12 @@ const Form = (props) => {
       </H1>
       <FromContainer>
         <form
+          id="contact-form"
           name="contact"
           method="post"
           data-netlify-honeypot="bot-field"
           data-netlify-recaptcha="true"
-          onSubmit="submit"
-          action="./success"
+          onSubmit={submitHandler}
         >
           <input type="hidden" name="form-name" value="contact" />
           <p>
@@ -75,7 +90,6 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* margin-top: 4%; */
 `;
 
 const FromContainer = styled.div`
@@ -94,7 +108,6 @@ const H1 = styled.h1`
   padding-left: 3rem;
   margin-bottom: 1rem;
   font-weight: 300;
-  /* margin-top: -100px; */
   padding: 2rem;
   border-radius: 0.8rem;
   background: rgba(213, 221, 224, 0.4);
@@ -107,7 +120,7 @@ const H1 = styled.h1`
 const Input = styled.input`
   width: 50rem;
   padding: 9px;
-  height: 32px;
+  height: 30px;
   border-radius: 0.6rem;
   outline: 0.2rem solid black;
   position: relative;
@@ -118,7 +131,7 @@ const Input = styled.input`
 const TextArea = styled.textarea`
   font-family: "Poppins, sans-serif";
   width: 50rem;
-  height: 140px;
+  height: 130px;
   padding: 7px;
   border-radius: 0.6rem;
   outline: 0.2rem solid black;
@@ -130,8 +143,8 @@ const TextArea = styled.textarea`
 
 const Checkbox = styled.input`
   margin-top: 12px;
-  height: 22px;
-  width: 22px;
+  height: 20px;
+  width: 20px;
   outline: 0.2rem solid black;
   accent-color: #333;
   &:checked {
@@ -155,8 +168,8 @@ const InputButton = styled.button`
   font-weight: 700;
   margin-top: 20px;
   font-size: 1.75rem;
-  padding: 1.7rem 2rem;
-  width: 20rem;
+  padding: 1.2rem 1.4rem;
+  width: 14rem;
   position: relative;
   left: 50%;
   transform: translate(-50%);
